@@ -110,13 +110,13 @@ Each VLAN now has a default gateway.
 
 Example for VLAN 20 PC:
 
-IP Address: 192.168.20.10 
+- IP Address: 192.168.20.10 
 
-Subnet Mask: 255.255.255.0 
+- Subnet Mask: 255.255.255.0 
 
-Default Gateway: 192.168.20.1
+- Default Gateway: 192.168.20.1
 
-Repeat according to VLAN subnet.
+- Repeat according to VLAN subnet.
 
 ### F. Optional: DHCP Server Configuration
 
@@ -132,62 +132,62 @@ Repeat for other VLANs.
 
 ### G. Wireless Router Setup
 
-Connect WAN/LAN to switch
+- Connect WAN/LAN to switch
 
-Assign static IP in correct VLAN subnet
+- Assign static IP in correct VLAN subnet
 
-Set SSID
+- Set SSID
 
-Enable WPA2 security
+- Enable WPA2 security
 ## Step-by-Step Configuration Guide (Packet Tracer)
 
 ### Step 1: Place Devices
 
 Add 1 Multilayer Switch (Core)
 
-Add ISR4331 Routers
+- Add ISR4331 Routers
 
-Add 2960 Access Switches
+- Add 2960 Access Switches
 
-Add PCs and Printers
+- Add PCs and Printers
 
-Add WRT300N Wireless Routers
+- Add WRT300N Wireless Routers
 
-Add Server
+- Add Server
 
 ### Step 2: Connect Devices
 
-Use straight-through cables for PC → Switch
+- Use straight-through cables for PC → Switch
 
-Use trunk links between Switch → Core
+- Use trunk links between Switch → Core
 
-Connect routers to core switch
+- Connect routers to core switch
 
-Connect server to core
+- Connect server to core
 
 ### Step 3: Create VLANs on Access Switches
 
-Go to CLI → configure VLANs.
+- Go to CLI → configure VLANs.
 
 Step 4: Assign Access Ports
 
-Assign correct VLAN to each lab/classroom block.
+- Assign correct VLAN to each lab/classroom block.
 
 Step 5: Configure Trunk Ports
 
-Set trunk mode on ports connecting to core.
+- Set trunk mode on ports connecting to core.
 
 Step 6: Configure Multilayer Switch
 
-Enable ip routing
+- Enable ip routing
 
-Create VLAN interfaces
+- Create VLAN interfaces
 
-Assign gateway IPs
+- Assign gateway IPs
 
 ### Step 7: Assign IP to PCs
 
-Manual or DHCP.
+- Manual or DHCP.
 
 ### Step 8: Test Connectivity
 
