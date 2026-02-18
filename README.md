@@ -28,35 +28,25 @@ This project simulates a campus network using Cisco Packet Tracer with a hierarc
 - Scalable network design
 - Real-world campus network simulation
 ## Technical Configuration Breakdown
-
 ### A. VLAN Configuration (On Access Switch)
-
 ```bash
 enable
 configure terminal
-
 vlan 20
  name CSE_LAB2
-
 vlan 30
  name CSE_LAB1
-
 vlan 40
  name CABIN
-
 vlan 50
  name SMART_CLASS
-
 vlan 60
  name GROUND_FLOOR
-
 vlan 70
  name HOSTEL
-
 exit
 ```
 ### B. Assign Ports to VLAN
-
 Example: Assigning ports for CSE Lab 2 (VLAN 20)
 ```bash
 interface range fa0/1 - 12
@@ -64,6 +54,12 @@ switchport mode access
 switchport access vlan 20
 exit
 ```
-
-
 Repeat for other VLANs using respective port ranges.
+### C. Configure Trunk Port (Switch to Core)
+```bash
+interface fa0/24
+switchport mode trunk
+switchport trunk allowed vlan 20,30,40,50,60,70
+exit
+```
+This allows VLAN traffic to pass between switches.
