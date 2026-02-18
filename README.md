@@ -27,3 +27,4 @@ This project simulates a campus network using Cisco Packet Tracer with a hierarc
 - Secure departmental isolation
 - Scalable network design
 - Real-world campus network simulation
+1️⃣ Technical Configuration Breakdown
