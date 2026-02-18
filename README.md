@@ -27,4 +27,26 @@ This project simulates a campus network using Cisco Packet Tracer with a hierarc
 - Secure departmental isolation
 - Scalable network design
 - Real-world campus network simulation
-1️⃣ Technical Configuration Breakdown
+# 1️⃣ Technical Configuration Breakdown
+# A. VLAN Configuration (On Access Switch)
+enable
+configure terminal
+
+vlan 20
+name CSE_LAB2
+
+vlan 30
+name CSE_LAB1
+
+vlan 40
+name CABIN
+
+vlan 50
+name SMART_CLASS
+
+vlan 60
+name GROUND_FLOOR
+
+vlan 70
+name HOSTEL
+exit
