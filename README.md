@@ -206,3 +206,6 @@ ip access-group 100 in
 ```
 
 This blocks hostel from accessing lab network.
+
+
+
