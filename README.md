@@ -8,3 +8,22 @@ This project simulates a campus network using Cisco Packet Tracer with a hierarc
 - Wired and wireless integration
 - Centralized server connectivity
 - Administrative and hostel isolation
+# VLAN Structure
+- VLAN 20 – CSE Lab 2
+- VLAN 30 – CSE Lab 1
+- VLAN 40 – Faculty Cabins
+- VLAN 50 – Smart Classrooms
+- VLAN 60 – Ground Floor (Library/Seminar Hall)
+- VLAN 70 – Boys Hostel
+# Devices Used
+- Cisco ISR4331 Routers
+- Multilayer Switch (Layer 3)
+- Cisco 2960 Access Switches
+- WRT300N Wireless Routers
+- PCs and Network Printers
+- Central Server
+# Objectives
+- Efficient traffic management
+- Secure departmental isolation
+- Scalable network design
+- Real-world campus network simulation
