@@ -55,3 +55,15 @@ vlan 70
 
 exit
 ```
+### B. Assign Ports to VLAN
+
+Example: Assigning ports for CSE Lab 2 (VLAN 20)
+```bash
+interface range fa0/1 - 12
+switchport mode access
+switchport access vlan 20
+exit
+```
+
+
+Repeat for other VLANs using respective port ranges.
