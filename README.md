@@ -126,7 +126,7 @@ dns-server 8.8.8.8
 
 Repeat for other VLANs.
 
-G. Wireless Router Setup
+### G. Wireless Router Setup
 
 Connect WAN/LAN to switch
 
@@ -135,3 +135,74 @@ Assign static IP in correct VLAN subnet
 Set SSID
 
 Enable WPA2 security
+## Step-by-Step Configuration Guide (Packet Tracer)
+
+### Step 1: Place Devices
+
+Add 1 Multilayer Switch (Core)
+
+Add ISR4331 Routers
+
+Add 2960 Access Switches
+
+Add PCs and Printers
+
+Add WRT300N Wireless Routers
+
+Add Server
+
+### Step 2: Connect Devices
+
+Use straight-through cables for PC → Switch
+
+Use trunk links between Switch → Core
+
+Connect routers to core switch
+
+Connect server to core
+
+### Step 3: Create VLANs on Access Switches
+
+Go to CLI → configure VLANs.
+
+Step 4: Assign Access Ports
+
+Assign correct VLAN to each lab/classroom block.
+
+Step 5: Configure Trunk Ports
+
+Set trunk mode on ports connecting to core.
+
+Step 6: Configure Multilayer Switch
+
+Enable ip routing
+
+Create VLAN interfaces
+
+Assign gateway IPs
+
+### Step 7: Assign IP to PCs
+
+Manual or DHCP.
+
+### Step 8: Test Connectivity
+
+From PC:
+
+ping 192.168.30.10
+
+
+If inter-VLAN routing works, ping should succeed across departments.
+
+### Step 9: Optional Security Upgrade
+
+Add ACL example:
+```
+access-list 100 deny ip 192.168.70.0 0.0.0.255 192.168.20.0 0.0.0.255
+access-list 100 permit ip any any
+
+interface vlan 70
+ip access-group 100 in
+```
+
+This blocks hostel from accessing lab network.
