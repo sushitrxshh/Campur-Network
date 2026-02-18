@@ -63,3 +63,37 @@ switchport trunk allowed vlan 20,30,40,50,60,70
 exit
 ```
 This allows VLAN traffic to pass between switches.
+### D. Inter-VLAN Routing (Multilayer Switch)
+Enable routing:
+```bash
+ip routing
+```
+
+Create SVI (Switch Virtual Interfaces):
+```bash
+interface vlan 20
+ip address 192.168.20.1 255.255.255.0
+no shutdown
+
+interface vlan 30
+ip address 192.168.30.1 255.255.255.0
+no shutdown
+
+interface vlan 40
+ip address 192.168.40.1 255.255.255.0
+no shutdown
+
+interface vlan 50
+ip address 192.168.50.1 255.255.255.0
+no shutdown
+
+interface vlan 60
+ip address 192.168.60.1 255.255.255.0
+no shutdown
+
+interface vlan 70
+ip address 192.168.70.1 255.255.255.0
+no shutdown
+```
+
+Each VLAN now has a default gateway.
