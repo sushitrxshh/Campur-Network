@@ -169,15 +169,15 @@ Add 1 Multilayer Switch (Core)
 
 - Go to CLI → configure VLANs.
 
-Step 4: Assign Access Ports
+### Step 4: Assign Access Ports
 
 - Assign correct VLAN to each lab/classroom block.
 
-Step 5: Configure Trunk Ports
+### Step 5: Configure Trunk Ports
 
 - Set trunk mode on ports connecting to core.
 
-Step 6: Configure Multilayer Switch
+### Step 6: Configure Multilayer Switch
 
 - Enable ip routing
 
