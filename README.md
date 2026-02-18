@@ -188,9 +188,9 @@ Manual or DHCP.
 ### Step 8: Test Connectivity
 
 From PC:
-
+```
 ping 192.168.30.10
-
+```
 
 If inter-VLAN routing works, ping should succeed across departments.
 
