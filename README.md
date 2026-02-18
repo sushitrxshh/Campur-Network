@@ -106,8 +106,10 @@ Each VLAN now has a default gateway.
 
 Example for VLAN 20 PC:
 
-IP Address: 192.168.20.10
-Subnet Mask: 255.255.255.0
+IP Address: 192.168.20.10 
+
+Subnet Mask: 255.255.255.0 
+
 Default Gateway: 192.168.20.1
 
 Repeat according to VLAN subnet.
