@@ -2,7 +2,9 @@
 This project simulates a campus network using Cisco Packet Tracer with a hierarchical design (Core, Distribution, Access). VLANs segment labs, classrooms, admin offices, and hostel areas for security and efficiency. Inter-VLAN routing via a multilayer switch enables controlled communication, creating a scalable and realistic campus network model.
 <img width="4088" height="1729" alt="College Server" src="https://github.com/user-attachments/assets/50c5db21-0d82-4904-b338-5a50755d606e" />
 ### Download and install Cisco Packet Tracer using the link below to run this project file.
-(https://tinyurl.com/payeng076)
+~~~
+https://tinyurl.com/payeng076
+~~~
 # Key Features
 - VLAN-based segmentation (VLAN 20–70)
 - Inter-VLAN routing using a multilayer switch
