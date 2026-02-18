@@ -34,16 +34,22 @@ enable
 configure terminal
 vlan 20
  name CSE_LAB2
+
 vlan 30
  name CSE_LAB1
+
 vlan 40
  name CABIN
+
 vlan 50
  name SMART_CLASS
+
 vlan 60
  name GROUND_FLOOR
+
 vlan 70
  name HOSTEL
+
 exit
 ```
 ### B. Assign Ports to VLAN
@@ -95,5 +101,35 @@ interface vlan 70
 ip address 192.168.70.1 255.255.255.0
 no shutdown
 ```
-
 Each VLAN now has a default gateway.
+### E. PC Configuration
+
+Example for VLAN 20 PC:
+
+IP Address: 192.168.20.10
+Subnet Mask: 255.255.255.0
+Default Gateway: 192.168.20.1
+
+Repeat according to VLAN subnet.
+
+### F. Optional: DHCP Server Configuration
+
+On multilayer switch:
+```
+ip dhcp pool VLAN20
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.1
+dns-server 8.8.8.8
+```
+
+Repeat for other VLANs.
+
+G. Wireless Router Setup
+
+Connect WAN/LAN to switch
+
+Assign static IP in correct VLAN subnet
+
+Set SSID
+
+Enable WPA2 security
